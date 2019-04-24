@@ -33,7 +33,7 @@ public class SignUpActivity extends AppCompatActivity {
         String name =  nameTextInputEditText.getText().toString();
         String lastname =  lastnameTextInputEditText.getText().toString();
 
-        Guest guest = new Guest(name,lastname,where);
+
     }
 
 }
