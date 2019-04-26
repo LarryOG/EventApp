@@ -9,26 +9,25 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="183dp"
-        android:layout_height="0dp"
+        android:layout_width="196dp"
+        android:layout_height="62dp"
         android:layout_marginTop="34dp"
-        android:layout_marginBottom="66dp"
         android:text="Sign Up!"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="37dp"
+        android:layout_width="142dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="55dp"
         android:text="Name : "
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
@@ -38,13 +37,14 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="76dp"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="8dp"
         android:text="Surname : "
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
@@ -54,55 +54,67 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="231dp"
-        android:layout_height="0dp"
+        android:layout_width="229dp"
+        android:layout_height="23dp"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="29dp"
         android:text="Where did you meet Alex?"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.302"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/inputName"
-        android:layout_width="0dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="163dp"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="96dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="36dp"
         app:boxBackgroundColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:hintEnabled="false">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/nameTextInput"
-            android:layout_width="match_parent"
-            android:layout_height="21dp"
+            android:layout_width="160dp"
+            android:layout_height="23dp"
             android:background="#FFFFFF"
             android:hint="firstname" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="0dp"
-        android:layout_height="53dp"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
+        android:layout_marginBottom="8dp"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
-        app:hintEnabled="false">
+        app:layout_constraintTop_toBottomOf="@+id/inputName">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/lastnameTextInput"
-            android:layout_width="match_parent"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:hint="surname" />
@@ -114,49 +126,53 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="27dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="110dp"
+        app:hintEnabled="false"
         app:layout_constraintBottom_toTopOf="@+id/addButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:hintEnabled="false">
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/whereTextInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="371dp"
+            android:layout_height="21dp"
             android:background="#FFFFFF"
             android:hint="eg. Askham Bryan College, Kirkless College" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/backButton"
-        android:layout_width="0dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginRight="19dp"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="116dp"
         android:onClick="backButtonClick"
         android:text="Go Back"
-        app:layout_constraintBaseline_toBaselineOf="@+id/addButton"
-        app:layout_constraintEnd_toStartOf="@+id/addButton"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/addButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
-        android:layout_marginBottom="106dp"
+        android:layout_marginBottom="116dp"
         android:onClick="addButtonClick"
         android:text="Add me!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/backButton"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toEndOf="@+id/backButton" />
 
 </android.support.constraint.ConstraintLayout>

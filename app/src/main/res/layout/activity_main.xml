@@ -11,6 +11,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Alex's Birthday Party"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#014901"
@@ -25,43 +26,72 @@
         android:id="@+id/editText"
         android:layout_width="200dp"
         android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="8dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:text="When? 16 April 2020 Where? The Ironworks"
         android:textAllCaps="false"
         android:textIsSelectable="false"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="292dp" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/signButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="357dp"
         android:layout_height="156dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:text="As you may know, Alex has recently turned 22 and we have been celebrating it with a blast. Since this years party was such a success, I decided to step up the game even more and start making list of guests for next year NOW!"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="106dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/dirButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="8dp"
         android:background="#C5BFBF"
         android:onClick="dirButtonClick"
         android:text="Directions"
-        tools:layout_editor_absoluteX="271dp"
-        tools:layout_editor_absoluteY="304dp" />
+        app:layout_constraintBottom_toTopOf="@+id/signButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <Button
         android:id="@+id/signButton"
-        android:layout_width="228dp"
-        android:layout_height="61dp"
+        android:layout_width="230dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:onClick="signButtonClick"
         android:text="Sign Up!"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="581dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
 </android.support.constraint.ConstraintLayout>

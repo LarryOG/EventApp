@@ -9,7 +9,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(R.style.splashScreenTheme);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(myIntent);
     }
 
-    public void dirButtonClick(View v){
+    /*public void dirButtonClick(View v){
         Intent myIntent = new Intent(getBaseContext(),   GoogleMapActivity.class);
         startActivity(myIntent);
-    }
+    }*/
 
 
 }
