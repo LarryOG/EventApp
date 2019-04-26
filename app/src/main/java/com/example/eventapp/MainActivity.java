@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(myIntent);
     }
 
-    /*public void dirButtonClick(View v){
-        Intent myIntent = new Intent(getBaseContext(),   GoogleMapActivity.class);
+    public void dirButtonClick(View v){
+        Intent myIntent = new Intent(getBaseContext(),   MapsActivity.class);
         startActivity(myIntent);
-    }*/
+    }
 
 
 }
